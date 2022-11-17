@@ -1,0 +1,90 @@
+html {
+    background-image: url("/src/assets/image/batumi-1_0.jpg");
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Roboto";
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather__container {
+    background-color: #000;
+    width: 760px;
+    height: 530px;
+    opacity: 0.8;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        margin: 20px 0 0 0;
+    }
+
+    form {
+        display: flex;
+        margin-top: 50px;
+
+        input {
+            border: none;
+            width: 420px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #fff;
+            outline: none;
+            padding-left: 20px;
+            font-size: 19px;
+        }
+
+        button {
+            background-image: url('./assets/image/search.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            margin-left: 5px;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .weather__info {
+        width: 100%;
+        padding-left: 75px;
+
+        h1 {
+            color: #fff;
+            margin: 100px 0 0 0;
+        }
+
+        p {
+            color: #fff;
+            font-size: 21px;
+        }
+    }
+}
